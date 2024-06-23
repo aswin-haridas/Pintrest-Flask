@@ -8,9 +8,13 @@
 </head>
 <body>
     <h1>Interest</h1>
+
+    <!-- namma oru div indakkum ennit athilek python inn vanna arguments ille images list ath namma display chyyum -->
     <div class="gallery">
         {% for image in images %}
+        <!-- dhande ivide for loop vech ella images inum div indakum athayath 100 image indel 100 div indavum -->
         <div class="image-container">
+            <!-- src de akath kedakkanath python flask inte code aan ath static nn paranja folderil list prakaram ulla image edthit src lek kodkum -->
             <img src="{{ url_for('static', filename='images/' + image) }}" alt="{{ image }}">
         </div>
         {% endfor %}

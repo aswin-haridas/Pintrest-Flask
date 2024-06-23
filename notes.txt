@@ -1,0 +1,11 @@
+terminal edkuka terminal->new terminal
+
+ennit ith adikuka 
+
+pip install -r requirements.txt
+
+ennit enter adikuka
+
+ath run aaya shesham app.py run chyyanam 
+
+code il comments ittitund ella line intem
