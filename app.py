@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from DeepImageSearch import Load_Data, Search_Setup
 import os
 
 app = Flask(__name__)
@@ -11,7 +12,11 @@ def index():
     
 @app.route('/image/<path:filename>')
 def serve_image(filename):
-    return render_template('image.html', filename=filename)
+    similar_images = get_similar_images(filename)
+    return render_template('image.html', filename=filename, images=similar_images)
 
+def get_similar_images(filename):
+    
+    pass
 if __name__ == '__main__':
     app.run(debug=True)
